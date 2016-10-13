@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="EiTBackend.Libraries.RouteCalculator">
+    <Position X="3.25" Y="6.25" Width="2.5" />
+    <Members>
+      <Method Name="AddCity" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AIAAAACAAAAAAAAIAAAQACAAAAAAABAAAAAABAAAAIA=</HashCode>
+      <FileName>Libraries\RouteCalculator.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="City" />
+      <Property Name="Package" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="EiTBackend.Objects.City">
+    <Position X="11.25" Y="11.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIAIEAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\City.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Route" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="EiTBackend.Objects.Route">
+    <Position X="11.25" Y="8.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAoAAAAAAIAAAAAAAAAAAAAAgEAAIAAAgAQAA=</HashCode>
+      <FileName>Objects\Route.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="RouteRequest" />
+      <Property Name="City" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="EiTBackend.Objects.RouteRequest" BaseTypeListCollapsed="true">
+    <Position X="7.25" Y="6.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>EAADAAAAAAAAAAAAAAAAAAAAAIARAAAAAQAAUAAQAAA=</HashCode>
+      <FileName>Objects\RouteRequest.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="RouteTypes" />
+      <Property Name="PackageTypes" />
+      <Property Name="PackageDimensions" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="EiTBackend.Services.ParcelRouteService" BaseTypeListCollapsed="true">
+    <Position X="15.5" Y="9" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\ParcelRouteService.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Route" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="EiTBackend.Objects.PackageDimensions">
+    <Position X="4" Y="11.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAEAAAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\PackageDimensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EiTBackend.Objects.PriceModel">
+    <Position X="7.25" Y="9.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAoQAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\PriceModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="PriceModelDetails" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="EiTBackend.Integrations.ParcelRouteIntegration" BaseTypeListCollapsed="true">
+    <Position X="15.5" Y="10.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Integrations\ParcelRouteIntegration.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Route" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="EiTBackend.Objects.PriceModelDetails">
+    <Position X="7.25" Y="11.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAQAAAAAAAAAAAAEAAAAAABAAAAAAAAAEAAA=</HashCode>
+      <FileName>Objects\PriceModelDetails.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EiTBackend.Objects.Package">
+    <Position X="3.75" Y="8.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>EAABAAAAAAAAAAAAAAAAAAAAAAABAAAAAQAAUAAQAAA=</HashCode>
+      <FileName>Objects\Package.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="EiTBackend.Interfaces.IParcel">
+    <Position X="15.5" Y="6.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IParcel.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="EiTBackend.Interfaces.IRouteRequest">
+    <Position X="15.5" Y="5.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IRouteRequest.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="EiTBackend.Enums.PackageTypes">
+    <Position X="11.25" Y="7" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAABAAAAAAAAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Enums\PackageTypes.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="EiTBackend.Enums.RouteTypes">
+    <Position X="11.25" Y="5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAACAAgAAAAAAAAQgAAAAQAAAAAAE=</HashCode>
+      <FileName>Enums\RouteTypes.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Gill Sans MT" Size="9" />
+</ClassDiagram>

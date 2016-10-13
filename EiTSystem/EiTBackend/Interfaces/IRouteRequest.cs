@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EiTBackend
+namespace EiTBackend.Interfaces
 {
-    public class Class1
+    interface IRouteRequest
     {
     }
 }

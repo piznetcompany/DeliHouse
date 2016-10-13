@@ -110,13 +110,31 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+    <None Include="ClassDiagram1.cd" />
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Attributes\StringValue.cs" />
+    <Compile Include="Enums\PackageTypes.cs" />
+    <Compile Include="Enums\RouteTypes.cs" />
+    <Compile Include="Integrations\ParcelRouteIntegration.cs" />
+    <Compile Include="Interfaces\IParcel.cs" />
+    <Compile Include="Interfaces\IRouteRequest.cs" />
+    <Compile Include="Libraries\RouteCalculator.cs" />
+    <Compile Include="Libraries\StringEnum.cs" />
+    <Compile Include="Objects\City.cs" />
+    <Compile Include="Objects\Package.cs" />
+    <Compile Include="Objects\PackageDimensions.cs" />
+    <Compile Include="Objects\PriceModelDetails.cs" />
+    <Compile Include="Objects\PriceModel.cs" />
+    <Compile Include="Objects\RequestResponse.cs" />
+    <Compile Include="Objects\Route.cs" />
+    <Compile Include="Objects\RouteRequest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\ParcelRouteService.cs" />
     <Content Include="Properties\EiTBackend.rd.xml" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>
